@@ -1,7 +1,7 @@
 FROM moremagic/centos7-sshd
 MAINTAINER moremagic <itoumagic@gmail.com>
 
-RUN yum update -y
+RUN yum update -y; exit 0;
 RUN yum install -y epel-release 
 RUN yum install -y nodejs npm
 RUN npm install -g coffee-script hubot yo generator-hubot
